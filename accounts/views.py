@@ -10,6 +10,7 @@ from django.contrib.auth.tokens import default_token_generator
 from .utils import detectUser,send_verification_email
 from django.core.exceptions import PermissionDenied
 from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
+from vendor.models import  Vendor
 # Create your views here.
 
 

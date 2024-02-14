@@ -66,6 +66,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'accounts.context_processors.get_vendor',
             ],
         },
     },
@@ -84,6 +85,7 @@ DATABASES = {
         'USER':config('DB_USER'),
         'PASSWORD':config('DB_PASSWORD'),
         'HOST':config('DB_HOST'),
+        'PORT':config('DB_PORT'),
     }
 }
 #..........custom using model......#
